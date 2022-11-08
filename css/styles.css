@@ -56,7 +56,7 @@ body{
     top: -100px;
     background-image: url('../images/bg-curvy-mobile.svg');
     background-repeat: no-repeat;
-    background-size: 100px 100%;
+    background-size: 100% 100px;
 }
 .nav {
     display: flex;
@@ -113,4 +113,31 @@ body{
     text-decoration: none;
     font-weight: bold;
     border-radius: 30px;
+}
+
+/* Cards */
+
+.cards{
+    text-align: center;
+    display: grid;
+    gap: 5rem;
+    color: #fff;
+}
+
+.cards__img{
+    width: 110px;
+    height: 130px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.cards__title{
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+}
+
+.cards__paragraphs{
+    line-height: 1,5;
 }
