@@ -89,7 +89,7 @@ body{
 .hero__img{
     display: block;
     width: 100%;
-    max-width: 600;
+    max-width: 500px;
     margin: 0 auto;
 }
 
@@ -146,7 +146,7 @@ body{
 .about__img{
     width: 100%;
     display: block;
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
     margin-bottom: 3rem;
 }
@@ -347,4 +347,74 @@ body{
 
 .footer__media{
     display: block;
+}
+
+@media (min-width:768px) {
+    .hero__wave::before{
+        background-image: url('../images/bg-curvy-desktop.svg');
+    }
+
+    .hero__title{
+        font-size: 3rem;
+    }
+
+    .cards{ 
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem 4rem;
+    }
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .about__title{
+        font-size: 2rem;
+    }
+
+    .testimony{ 
+        justify-content: space-between;
+    }
+
+    .testimony__item{
+        width: 30%;
+    }
+
+    .join__container{
+        max-width: 800px;
+    }
+
+    .join__form{
+        padding-top: 1rem;
+        grid-template-columns: 1fr max-content;
+    }
+
+    .footer__content{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 2rem;
+    }
+
+    .footer__contact{
+        max-width: 200px;
+    }
+
+    .footer__nav{
+        margin-top: 0;
+    }
+
+    .footer__social{
+        margin-top: 0;
+    }
+
+    .footer__direction--first{
+        max-width: 300px;
+    }
+
+    .footer__direction--second{
+        margin: 0 0  1rem;
+    }
 }
